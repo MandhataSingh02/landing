@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.BecomeSeller a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  overflow-x: hidden;
+  font-size: 2rem;
+  font-family: "Roboto";
+}
+
+/* ########################### Navbar ###################### */
+
+.Navbar {
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Navbar h1 {
+  padding: 0 25px;
+  color: green;
+}
+
+.Navbar .right {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  justify-content: space-evenly;
+  padding: 10px 0;
+}
+
+.Navbar .right img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 5px solid;
+}
+
+.Navbar .right img:hover {
+  cursor: pointer;
+}
+
+.BecomeSeller {
+  padding: 10px 20px;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+  color: gray;
+}
+
+.BecomeSeller a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* ###################### Main Container ################### */
+
+.MainContainer {
+  height: 350px;
+  background-image: url("./assets/MainBackground_Img.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1rem;
+  color: white;
+  position: relative;
+}
+
+.MainContainer h1 {
+  margin: 40px 0;
+  text-transform: capitalize;
+  width: 100%;
+  text-align: center;
+}
+
+.MainContainer .inputbox {
+  width: 100%;
+  text-align: center;
+}
+
+.MainContainer .inputbox input[type="text"] {
+  padding: 10px 15px;
+  margin: 0 40px;
+  font-size: 1.2rem;
+  width: 60%;
+  border-radius: 5px;
+  outline: none;
+}
+
+.MainContainer .inputbox input[type="submit"] {
+  padding: 10px 15px;
+  height: 100%;
+  border: 1px solid;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  transition: all 0.4s;
+}
+
+.MainContainer .inputbox input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: rgb(193, 193, 193);
+}
+
+.MainContainer .Options {
+  width: 80%;
+  margin: 10px 0;
+  translate: 0 35px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.MainContainer .Options span {
+  font-size: 1.4rem;
+  background-color: black;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.MainContainer .Options span:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+
+/* ############# List Of Workers ################## */
+
+.ShowListofWorkers {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.Worker {
+  height: 200px;
+  width: 30%;
+  margin: 20px 0;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px 0px #b6b6b6;
+  transition: all 0.4s;
+  border: 1px solid;
+  border-radius: 4px;
+}
+
+.Worker:hover {
+  scale: 1.1;
+}
+
+.stars {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.Worker img {
+  height: 80%;
+  width: 160px;
+  border-radius: 5px;
+  border: 3px solid;
+}
+
+.Worker .ProfileName h1 {
+  width: 100%;
+}
+
+.ProfileName {
+  width: 65%;
+  height: 80%;
+  margin-left: 20px;
+  font-size: 1rem;
+  padding: 10px 18px;
+}
+
+.ProfileName .RatingStars {
+  font-size: 1.5rem;
+  padding: 10px 0;
+}
+
+.ProfileName .RatingStars i:nth-child(1),
+.ProfileName .RatingStars i:nth-child(2),
+.ProfileName .RatingStars i:nth-child(3),
+.ProfileName .RatingStars i:nth-child(4) {
+  color: red;
+}
+
+.ProfileName button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 1px solid;
+  border-radius: 4px;
+  width: 100%;
+  transition: background-color 0.4s;
+}
+
+.ProfileName button:hover {
+  cursor: pointer;
+  background-color: gainsboro;
+}
